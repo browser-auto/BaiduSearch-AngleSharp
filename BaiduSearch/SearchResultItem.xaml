@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="BaiduSearch.SearchResultItem"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:BaiduSearch"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Name="title" Grid.Row="0">
+            <Hyperlink NavigateUri="" Name="link" Click="link_Click"></Hyperlink>
+        </TextBlock>
+
+        <TextBlock x:Name="desc" Grid.Row="1" TextWrapping="Wrap" MaxWidth="400"></TextBlock>
+    </Grid>
+</UserControl>
